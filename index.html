@@ -306,7 +306,7 @@
                     <textarea name="" id="" cols="0" rows="10" class="contact__input" id="message"></textarea>
                     <input type="button" value="submit" class="contact__button button">
                 </form> -->
-                <form class="gform pure-form pure-form-stacked" method="POST" data-netlify="true">
+                <form class="gform pure-form pure-form-stacked" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                     <!-- change the form action to your script url -->
 
                     <div class="form-elements">
@@ -337,6 +337,9 @@
 
                         <button class="button-success pure-button button-xlarge" type="submit">
                             <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+                        <fieldset class="pure-group">
+                            <div data-netlify-recaptcha="true"></div>
+                        </fieldset>
                     </div>
 
                     <!-- Customise the Thankyou Message People See when they submit the form: -->
